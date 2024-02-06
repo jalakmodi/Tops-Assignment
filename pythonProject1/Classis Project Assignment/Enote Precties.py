@@ -1,5 +1,5 @@
 E_Note=[]
-
+counter=1
 while True:
     print("*" * 30)
     print("Welcome To E-Note Console")
@@ -14,16 +14,16 @@ while True:
     if choice == 1:
         new_note=input("Enter Your Note : ")
         file = open("enote.txt", "a")
-        file.write(new_note)
+        file.write(str(counter)+" : "+new_note+"\n")
         file.close()
         print("Note Added Successfully.")
+        counter+=1
 
     elif choice == 2:
         print("Below Your Added Notes ")
         file=open("enote.txt","r")
         print(file.read())
         file.close()
-
     elif choice == 3:
         print("Exiting E-Note Console. Goodbye!")
         break

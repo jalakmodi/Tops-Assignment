@@ -517,8 +517,72 @@
 # s1.getData("Jalak", "Modi")
 # s1.putData()
 
+# ************Oop Ma Inheritance ****** ***********26-01-2.24*****************
+# class A:
+#     def getA(self,a):
+#         self.a=a
+#     def putA(self):
+#         print("A : ",self.a)
+#
+# class B(A):
+#     def getB(self, b):
+#         self.b=b
+#
+#     def putB(self):
+#         print("B : ", self.b)
+#
+# class C(B,A):
+#     def getC(self, c):
+#         self.c = c
+#
+#     def putC(self):
+#         print("C : ", self.c)
+#
+# c1=C()
+# c1.getA(30)
+# c1.putA()
+# c1.getB(20)
+# c1.putB()
+# c1.getC(10)
+# c1.putC()
 
 
+# class A:
+#     def getA(self,a):
+#         self.a=a
+#     def putA(self):
+#         print("A : ",self.a)
+#
+# class B(A):
+#     def getB(self, b):
+#         self.b=b
+#
+#     def putB(self):
+#         print("B : ", self.b)
+#
+# class C(A):
+#     def getC(self, c):
+#         self.c = c
+#
+#     def putC(self):
+#         print("C : ", self.c)
+#
+# class D(B,C):
+#     def getD(self, d):
+#         self.d = d
+#
+#     def putD(self):
+#         print("D : ", self.d)
+#
+# d1=D()
+# d1.getA(30)
+# d1.putA()
+# d1.getB(20)
+# d1.putB()
+# d1.getC(10)
+# d1.putC()
+# d1.getD(5)
+# d1.putD()
 
 
 
