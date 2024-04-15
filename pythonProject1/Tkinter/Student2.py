@@ -38,7 +38,7 @@ def serch_data():
     else:
         conn=create_conn()
         cursor=conn.cursor()
-        query = "select * from jnclass where st_id=%s"
+        query = "select * from jnclass where ID=%s"
         args = (e_id.get(),)
         cursor.execute(query,args)
         row=cursor.fetchall()
@@ -56,7 +56,7 @@ def update_data():
     else:
         conn = create_conn()
         cursor = conn.cursor()
-        query = "update jnclass set First_Name=%s,Last_Name=%s,Email=%s,Mobile=%s where st_id=%s"
+        query = "update jnclass set First_Name=%s,Last_Name=%s,Email=%s,Mobile=%s where ID=%s"
         args = (e_fname.get(), e_lname.get(), e_email.get(), e_mobile.get(), e_id.get())
         cursor.execute(query, args)
         conn.commit()
@@ -74,7 +74,7 @@ def delete_data():
     else:
         conn = create_conn()
         cursor = conn.cursor()
-        query = "delete from jnclass where st_id=%s"
+        query = "delete from jnclass where ID=%s"
         args = (e_id.get(),)
         cursor.execute(query,args)
         conn.commit()
